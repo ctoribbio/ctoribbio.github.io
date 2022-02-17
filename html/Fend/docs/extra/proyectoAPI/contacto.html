@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto</title>
+    </head>
+
+    <body>
+        <form id="contacto">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <input type="text" id="nombre" name="nombre" required placeholder="Nombre"><br>
+                <input type="text" id="apellidos" name="apellidos" required placeholder="Apellidos"><br>
+                <input type="text" id="telf" name="telf" required placeholder="telefono"><br>
+                <select id="pais">
+                    <option value="default" selected>Seleccione un País</option>
+                </select><br>
+                <input type="text" id="website" name="website" placeholder="Sitio Web"><br>
+            </fieldset>
+            <fieldset>
+                <legend>Mensaje</legend>
+                <input type="text" id="asunto " name="asunto" required placeholder="Asunto"><br>
+                <textarea id="mensaje" name="mensaje" placeholder="Mensaje"></textarea><br>
+            </fieldset>
+            <label for="newsletter">Acepto recibir mensajes a mi correo electronico(Newsletter)</label>
+            <input type="checkbox" id="newsletter"><br>
+            <label for="newsletter">Acepto la politica de privacidad</label>
+            <input type="checkbox" required id="politica">
+            <input type="submit">
+        </form>
+        <script src="js/form.js"></script>
+    </body>
+
+</html>

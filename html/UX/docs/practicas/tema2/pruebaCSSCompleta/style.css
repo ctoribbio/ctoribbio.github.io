@@ -1,0 +1,50 @@
+html{
+    background-color: white;
+    font-family: Ubuntu;
+    --mainColor: #455a64;
+    --mainLightColor: #718792;
+    --mainDarkColor: #1c313a;
+    --secondaryColor: #ffb300;
+    --secondaryLightColor: #ffe54c;
+    --secondaryDarkColor : #c68400;
+}
+body{
+  width: 80%;
+  margin: 0 auto;
+}
+header{
+  background-color: var(--mainColor);
+  display:flex;
+  justify-content:space-between;
+  
+}
+ul{
+  display:inline-flex;
+  list-style:none;
+}
+li{
+  padding: 0.6rem;
+}
+.nav{
+  display:inline-flex;
+  background-color:greenyellow;
+}
+main{
+  background-color: var(--mainLightColor);
+}
+section{
+  background-color: var(--secondaryColor);
+}
+footer{
+  background-color: var(--secondaryLightColor);
+}
+aside{
+  background-color: var(--secondaryDarkColor);
+}
+.cuerpo{
+  display: flex;
+  background-color: red;
+}
+img{
+  width: 400px;
+}
