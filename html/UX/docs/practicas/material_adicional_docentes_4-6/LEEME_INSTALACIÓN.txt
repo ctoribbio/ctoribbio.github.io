@@ -1,8 +1,0 @@
-Muchos de los proyectos de este libro utilizan herramientas que necesitan una instalación.
-En todos aquellos en los que haya un fichero package.json se requiere tener instalado
-Node.js y ejecutar lo siguiente en el directorio del proyecto:
-
- npm install
-
-Aquellos proyectos que lo precisan tienen también un fichero README.md con indicaciones
-más precisas.

@@ -1,8 +1,0 @@
-El entorno está listo para ejecutar simplemente
- grunt
-Esto simplemente pasará la validación HTML y luego el test de accesibilidad.
-Si el primero encuentra algún error se detendrá.
-Si deseas ejecutar los test de forma independiente utiliza:
- grunt htmllint
-O
- grunt accessibility

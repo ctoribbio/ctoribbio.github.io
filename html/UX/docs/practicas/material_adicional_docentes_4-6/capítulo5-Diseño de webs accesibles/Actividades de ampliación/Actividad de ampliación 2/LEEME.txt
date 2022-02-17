@@ -1,3 +1,0 @@
-Para llevar a cabo el análisis con TAW, deberás subir esta página a un hosting.
-En caso de no poder hacerlo, puedes probar este resultado en:
-http://aula0.cuatrovientos.org/test/di/actividad.amp.5.2/index.html
