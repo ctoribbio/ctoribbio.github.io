@@ -253,3 +253,8 @@ Crear una plantilla en netbeans
 Tools-Templates-Java-Java Class- Open in editor
 
 Uso de IA para generar codigo fuente
+
+
+
+
+app.use(express.static(__dirname + '/public'));
