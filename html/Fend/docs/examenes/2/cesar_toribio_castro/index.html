@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Segunda Evaluacion</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div id="content">
+        <form id="form">
+            <label for="numpersonas">Numero de personas</label>
+            <input type="number" name="numpersonas" id="numpersonas" placeholder="Numero de Viajeros">
+            <br><br>
+            <label for="numpnoches">Numero de noches</label>
+            <input type="number" name="numnoches" id="numnoches" placeholder="Numero de Noches">
+            <br><br>
+            <label for="dates">Dia de llegada</label>
+            <input type="date" name="dates" id="dates">
+            <br><br>
+            <label for="tipo">Tipo de Alojamiento</label>
+            <select id="tipo">
+                <option value="default" selected>Seleccione un tipo de alojamiento.</option>
+            </select>
+            <input type="submit">
+            <span id="error"></span>
+        </form>
+
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
