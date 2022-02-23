@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Simple video control</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <h1>Ejemplo de vídeos con controles personalizados</h1>
+    </header>
+
+    <main class="flex">
+      <!-- First column -->
+      <section>
+        <video width="480" height="320" id="video1" poster="images/willy.jpg">
+          <source src="video/willyrex.mp4" type="video/mp4" />
+          <source src="video/willyrex720.mp4" type="video/mp4" />
+          <source src="video/willyrex.webm" type="video/webm" />
+          <p>Your browser does not support the video element.</p>
+        </video>
+        <div class="button-container">
+          <button id="b1" onclick="playVideo(video1);" class="btn btn-success">
+            Play <i class="glyphicon glyphicon-play"></i>
+          </button>
+          <button id="b2" onclick="pauseVideo(video1);" class="btn btn-warning">
+            Pause <i class="glyphicon glyphicon-pause"></i>
+          </button>
+          <button id="b3" onclick="stopVideo(video1)" class="btn btn-danger">
+            Stop <i class="glyphicon glyphicon-stop"></i>
+          </button>
+          <button id="b4" onclick="rewindVideo(video1);" class="btn btn-info">
+            Rewind <i class="glyphicon glyphicon-fast-backward"></i>
+          </button>
+        </div>
+      </section>
+      <!-- Second column -->
+      <section>
+        <video width="480" height="320" id="video2" poster="images/baile.jpg">
+          <source src="video/baile.mp4" type="video/mp4" />
+          <source src="video/baile720.mp4" type="video/ogg" />
+          <p>Your browser does not support the video element.</p>
+        </video>
+        <div class="button-container">
+          <button id="b1" onclick="playVideo(video2);" class="btn btn-success">
+            Play <i class="glyphicon glyphicon-play"></i>
+          </button>
+          <button id="b2" onclick="pauseVideo(video2);" class="btn btn-warning">
+            Pause <i class="glyphicon glyphicon-pause"></i>
+          </button>
+          <button id="b3" onclick="stopVideo(video2)" class="btn btn-danger">
+            Stop <i class="glyphicon glyphicon-stop"></i>
+          </button>
+          <button id="b4" onclick="rewindVideo(video2);" class="btn btn-info">
+            Rewind <i class="glyphicon glyphicon-fast-backward"></i>
+          </button>
+        </div>
+      </section>
+      <!-- Third column -->
+      <section>
+        <video width="480" height="320" id="video3"  poster="images/mono.jpg">
+          <source src="video/mono.mp4" type="video/mp4" />
+          <source src="video/mono720.mp4" type="video/ogg" />
+          <source src="video/mono.webm" type="video/webm" />
+          <p>Your browser does not support the video element.</p>
+        </video>
+        <div class="button-container">
+          <button
+            id="b1"
+            video="3"
+            onclick="playVideo(video3);"
+            class="btn btn-success"
+          >
+            Play <i class="glyphicon glyphicon-play"></i>
+          </button>
+          <button id="b2" onclick="pauseVideo(video3);" class="btn btn-warning">
+            Pause <i class="glyphicon glyphicon-pause"></i>
+          </button>
+          <button id="b3" onclick="stopVideo(video3)" class="btn btn-danger">
+            Stop <i class="glyphicon glyphicon-stop"></i>
+          </button>
+          <button id="b4" onclick="rewindVideo(video3);" class="btn btn-info">
+            Rewind <i class="glyphicon glyphicon-fast-backward"></i>
+          </button>
+        </div>
+      </section>
+    </main>
+    <script>
+      const video1 = document.getElementById("video1");
+      const video2 = document.getElementById("video2");
+      const video3 = document.getElementById("video3");
+      function playVideo(video) {
+        video.play();
+      }
+
+      function pauseVideo(video) {
+        video.pause();
+      }
+
+      function stopVideo(video) {
+        video.currentTime = 0;
+        video.pause();
+      }
+
+      function rewindVideo(video) {
+        video.currentTime = 0;
+      }
+    </script>
+  </body>
+</html>
