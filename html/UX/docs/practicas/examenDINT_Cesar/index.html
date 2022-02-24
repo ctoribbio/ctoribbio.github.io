@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Examen Interfaces</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="logo"><img src="svg/advertencia.svg" class="logo"></div>
+            <div class="titulo">
+                <h1>Esto es el titulo</h1>
+            </div>
+            <div class="buscador">
+                <input type="text" placeholder="Busca algo">
+                <img src="svg/info.svg">
+            </div>
+        </header>
+        <main>
+            <section class="seccionImagenes">
+                <div class="contenedorImagen">
+                    <picture class="image">
+                        <source media="(max-width: 600px)" class="image"srcset="img/monoSmall.jpg" />
+                        <source media="(min-width: 600px)" class="image"srcset="img/mono.jpg" />
+                        <source src="img/mono.webp">
+                        <img class="image" srcset="img/mono.jpg 1000w, img/monoSmall.jpg 600w"
+                            sizes="(max-width: 600px) 97vw, 47vw" alt="Mono que fuma 1" />
+                    </picture>
+
+                    <h3>Un mono</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adip elit, sed diam nonLorem ipsum dolor sit amet,
+                        consectetur adip elit, sed diam nonLorem ipsum dolor sit amet, consectetur adip elit, sed
+                        diam
+                        nonLorem ipsum dolor sit amet, consectetur adip elit, sed diam nonLorem ipsum dolor sit
+                        amet,
+                        consectetur adip elit, sed diam nonLorem ipsum dolor sit amet, consectetur adip elit, sed
+                        diam
+                        nonLorem ipsum dolor sit amet, consectetur adip elit, sed diam nonLorem ipsum dolor sit
+                        amet,
+                        consectetur adip elit, sed diam non</p>
+                </div>
+                <div class="contenedorImagen">
+                    <picture class="image">
+                        <source media="(max-width: 600px)" class="image"srcset="img/monoSmall.jpg" />
+                        <source media="(min-width: 600px)" class="image"srcset="img/mono.jpg" />
+                        <source src="img/mono.webp">
+                        <img class="image" srcset="img/mono.jpg 1000w, img/monoSmall.jpg 600w"
+                            sizes="(max-width: 600px) 97vw, 47vw" alt="Mono que fuma 1" />
+                    </picture>
+                    <h3>Un mono</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adip elit, sed diam nonLorem ipsum dolor sit amet,
+                        consectetur adip elit, sed diam nonLorem ipsum dolor sit amet, consectetur adip elit, sed
+                        diam
+                        nonLorem ipsum dolor sit amet, consectetur adip elit, sed diam nonLorem ipsum dolor sit
+                        amet,
+                        consectetur adip elit, sed diam nonLorem ipsum dolor sit amet, consectetur adip elit, sed
+                        diam
+                        nonLorem ipsum dolor sit amet, consectetur adip elit, sed diam nonLorem ipsum dolor sit
+                        amet,
+                        consectetur adip elit, sed diam non</p>
+                </div>
+                <div class="contenedorImagen">
+                    <picture class="image">
+                        <source media="(max-width: 600px)" class="image"srcset="img/monoSmall.jpg" />
+                        <source media="(min-width: 600px)" class="image"srcset="img/mono.jpg" />
+                        <source src="img/mono.webp">
+                        <img class="image" srcset="img/mono.jpg 1000w, img/monoSmall.jpg 600w"
+                            sizes="(max-width: 600px) 97vw, 47vw" alt="Mono que fuma 1" />
+                    </picture>
+                    <h3>Un mono</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adip elit, sed diam nonLorem ipsum dolor sit amet,
+                        consectetur adip elit, sed diam nonLorem ipsum dolor sit amet, consectetur adip elit, sed
+                        diam
+                        nonLorem ipsum dolor sit amet, consectetur adip elit, sed diam nonLorem ipsum dolor sit
+                        amet,
+                        consectetur adip elit, sed diam nonLorem ipsum dolor sit amet, consectetur adip elit, sed
+                        diam
+                        nonLorem ipsum dolor sit amet, consectetur adip elit, sed diam nonLorem ipsum dolor sit
+                        amet,
+                        consectetur adip elit, sed diam non</p>
+                </div>
+                <div class="contenedorImagen">
+                    <picture class="image">
+                        <source media="(max-width: 600px)" class="image"srcset="img/monoSmall.jpg" />
+                        <source media="(min-width: 600px)" class="image"srcset="img/mono.jpg" />
+                        <source src="img/mono.webp">
+                        <img class="image" srcset="img/mono.jpg 1000w, img/monoSmall.jpg 600w"
+                            sizes="(max-width: 600px) 97vw, 47vw" alt="Mono que fuma 1" />
+                    </picture>
+                    <h3>Un mono</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adip elit, sed diam nonLorem ipsum dolor sit amet,
+                        consectetur adip elit, sed diam nonLorem ipsum dolor sit amet, consectetur adip elit, sed
+                        diam
+                        nonLorem ipsum dolor sit amet, consectetur adip elit, sed diam nonLorem ipsum dolor sit
+                        amet,
+                        consectetur adip elit, sed diam nonLorem ipsum dolor sit amet, consectetur adip elit, sed
+                        diam
+                        nonLorem ipsum dolor sit amet, consectetur adip elit, sed diam nonLorem ipsum dolor sit
+                        amet,
+                        consectetur adip elit, sed diam non</p>
+                </div>
+            </section>
+            <section class="seccionVideos">
+                <div class="contenedorVideo">
+                    <video class="video" controls preload="none" poster="thumbnail/dino.PNG">
+                        <source src="video/willyrex.mp4" type="video/mp4" />
+                        <source src="video/willyrex720.mp4" type="video/mp4" />
+                        <source src="video/willyrex.webm" type="video/webm" />
+                        <track label="Español" kind="subtitles" srclang="es" src="vtt/dinosaurio.vtt">
+                        <track label="English" kind="subtitles" srclang="en" src="vtt/dinosaur.vtt">
+
+                        <p>Your browser does not support the video element.</p>
+                    </video>
+                    <h3>Dinosaurio que Anda</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adip elit, sed diam nonLorem ipsum dolor sit amet,
+                        consectetur adip elit, sed diam nonLorem ipsum dolor sit amet, consectetur adip elit, sed diam
+                        nonLorem ipsum dolor sit amet, consectetur adip elit, sed diam nonLorem ipsum dolor sit amet,
+                        consectetur adip elit, sed diam nonLorem ipsum dolor sit amet, consectetur adip elit, sed diam
+                        nonLorem ipsum dolor sit amet, consectetur adip elit, sed diam nonLorem ipsum dolor sit amet,
+                        consectetur adip elit, sed diam non</p>
+                </div>
+                <div class="contenedorVideo">
+                    <video class="video" controls preload="none" poster="thumbnail/dino.PNG">
+                        <source src="video/willyrex.mp4" type="video/mp4" />
+                        <source src="video/willyrex720.mp4" type="video/mp4" />
+                        <source src="video/willyrex.webm" type="video/webm" />
+                        <track label="Español" kind="subtitles" srclang="es" src="vtt/dinosaurio.vtt">
+                        <track label="English" kind="subtitles" srclang="en" src="vtt/dinosaur.vtt">
+                        <p>Your browser does not support the video element.</p>
+                    </video>
+                    <h3>Dinosaurio que Anda</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adip elit, sed diam nonLorem ipsum dolor sit amet,
+                        consectetur adip elit, sed diam nonLorem ipsum dolor sit amet, consectetur adip elit, sed diam
+                        nonLorem ipsum dolor sit amet, consectetur adip elit, sed diam nonLorem ipsum dolor sit amet,
+                        consectetur adip elit, sed diam nonLorem ipsum dolor sit amet, consectetur adip elit, sed diam
+                        nonLorem ipsum dolor sit amet, consectetur adip elit, sed diam nonLorem ipsum dolor sit amet,
+                        consectetur adip elit, sed diam non</p>
+                </div>
+                <div class="contenedorVideo">
+                    <video class="video" controls preload="none" poster="thumbnail/dino.PNG">
+                        <source src="video/willyrex.mp4" type="video/mp4" />
+                        <source src="video/willyrex720.mp4" type="video/mp4" />
+                        <source src="video/willyrex.webm" type="video/webm" />
+                        <track label="Español" kind="subtitles" srclang="es" src="vtt/dinosaurio.vtt">
+                        <track label="English" kind="subtitles" srclang="en" src="vtt/dinosaur.vtt">
+                        <p>Your browser does not support the video element.</p>
+                    </video>
+                    <h3>Dinosaurio que Anda</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adip elit, sed diam nonLorem ipsum dolor sit amet,
+                        consectetur adip elit, sed diam nonLorem ipsum dolor sit amet, consectetur adip elit, sed diam
+                        nonLorem ipsum dolor sit amet, consectetur adip elit, sed diam nonLorem ipsum dolor sit amet,
+                        consectetur adip elit, sed diam nonLorem ipsum dolor sit amet, consectetur adip elit, sed diam
+                        nonLorem ipsum dolor sit amet, consectetur adip elit, sed diam nonLorem ipsum dolor sit amet,
+                        consectetur adip elit, sed diam non</p>
+                </div>
+                <div class="contenedorVideo">
+                    <video class="video" controls preload="none" poster="thumbnail/dino.PNG">
+                        <source src="video/willyrex.mp4" type="video/mp4" />
+                        <source src="video/willyrex720.mp4" type="video/mp4" />
+                        <source src="video/willyrex.webm" type="video/webm" />
+                        <track label="Español" kind="subtitles" srclang="es" src="vtt/dinosaurio.vtt">
+                        <track label="English" kind="subtitles" srclang="en" src="vtt/dinosaur.vtt">
+                        <p>Your browser does not support the video element.</p>
+                    </video>
+                    <h3>Dinosaurio que Anda</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adip elit, sed diam nonLorem ipsum dolor sit amet,
+                        consectetur adip elit, sed diam nonLorem ipsum dolor sit amet, consectetur adip elit, sed diam
+                        nonLorem ipsum dolor sit amet, consectetur adip elit, sed diam nonLorem ipsum dolor sit amet,
+                        consectetur adip elit, sed diam nonLorem ipsum dolor sit amet, consectetur adip elit, sed diam
+                        nonLorem ipsum dolor sit amet, consectetur adip elit, sed diam nonLorem ipsum dolor sit amet,
+                        consectetur adip elit, sed diam non</p>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <span>Esto será el footer</span>
+        </footer>
+    </body>
+
+</html>

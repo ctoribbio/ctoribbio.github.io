@@ -1,0 +1,91 @@
+//Le damos estilo al header y separamos los 3 elementos que se ncuentran en el
+$gray_light: rgb(199, 197, 197);
+$orange: #ffb300;
+
+main{
+    background-color: $gray_light;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $orange;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 100%;
+  }
+  
+  .footer {
+    background-color: $orange;
+  }
+  
+  //Hacemos que sea flex la seccion donde iran las imagenes y le damos una anchura total
+  .seccionImagenes {
+    display: flex;
+    flex-direction:row;
+    width: 100%;
+
+  }
+  
+  //Hacemos que cada contnedor solo ocupe el 25% del ancho de la seccion 
+  .contenedorImagen {
+    width: 25%;
+    margin:5px;
+  }
+  
+  //Hacemos lo mismo para los contenedores de video
+  .contenedorVideo {
+    width: 25%;
+    margin:5px;
+  }
+  
+  //Hacemos que la imagen ocupe la totalidad del ancho del contenedor de imagenes
+  .image {
+    width: 100%;
+  }
+  
+  //Hacemos con la seccion de videos lo mismo que con la de imagenes 
+  .seccionVideos {
+    display: flex;
+    flex-direction:row;
+    width: 100%;
+  }
+  //Hacemos que el video ocupe la totalidad del ancho del contenedor de imagenes
+  .video {
+    width: 100%;
+  }
+  
+  //Hacemos una media query a 600px 
+  @media (max-width: 600px) {
+      //Hacemos que los elementos del header dejen margenes entre si y el marco
+    .header {
+        justify-content: space-around;
+        align-items: center;
+      }
+      //Hacemos que cada contenedor ocupe el 100% del ancho 
+    .contenedorImagen {
+      width: 100%;
+    }  
+    //Hacemos que la seccion de las imagenes vaya en columna
+    .seccionImagenes {
+      flex-direction: column;
+    }
+    
+    //Hacemos lo mismo que con la seccion de imagenes
+    .seccionVideos {
+      flex-direction: column;
+    }
+    //Hacemos lo mismo que con el contenedor de imagenes
+    .contenedorVideo {
+        width: 100%;
+      }
+      //Ocultamos el buscador
+    .buscador {
+      display: none;
+    }
+  }
+  
+  /*# sourceMappingURL=style.css.map */
+  

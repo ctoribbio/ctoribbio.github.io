@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Renderizado de imagenes</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header-->
+    <header>
+      <div class="title">
+        <h3 class="header-title">Galería de imágenes</h3>
+      </div>
+    </header>
+    <!-- Main-->
+    <main>
+      <!-- Images section-->
+      <section>
+        <h4 class="title">
+          Imágenes renderizadas con la etiqueta 'img' y 'srcset'
+        </h4>
+        <img
+          class="image"
+          srcset="img/falls2.jpg 1000w, img/falls2Small.jpg 700w"
+          sizes="(max-width: 600px) 97vw, 47vw"
+          src="img/falls2.jpg"
+          alt="catarata"
+        />
+        <img
+          class="image"
+          srcset="img/mist.jpg 1500w, img/mistSmall.jpg 800w"
+          sizes="(max-width: 600px) 97vw, 47vw"
+          src="img/mist.jpg"
+          alt="Niebla"
+        />
+        <img
+          class="image"
+          srcset="img/mountainskies.jpg 1000w, img/mountainskiesSmall.jpg 600w"
+          sizes="(max-width: 600px) 97vw, 47vw"
+          src="img/mountainskies.jpg"
+          alt="Las montañas"
+        />
+        <img
+          class="image"
+          srcset="img/nature.jpg 600w, img/natureSmall.jpg 400w"
+          sizes="(max-width: 600px) 97vw, 47vw"
+          src="img/nature.jpg"
+          alt="La frondosa naturaleza"
+        />
+        <img
+          class="image"
+          srcset="img/ocean.jpg 1000w, img/oceanSmall.jpg 500w"
+          sizes="(max-width: 600px) 97vw, 47vw"
+          src="img/ocean.jpg"
+          alt="Un Oceano"
+        />
+        <img
+          class="image"
+          srcset="img/paris.jpg 400w, img/parisSmall.jpg 300w"
+          sizes="(max-width: 600px) 97vw, 47vw"
+          src="img/paris.jpg"
+          alt="Torre Eiffel, Paris"
+        />
+      </section>
+      <!-- Second section-->
+      <section>
+        <h4 class="title">Imágenes renderizadas con la etiqueta 'picture'</h4>
+        <picture class="image">
+          <source
+            media="(max-width: 600px)"
+            srcset="img/falls2.jpg 1000w, img/falls2Small.jpg 700w"
+            alt="Catarata"
+          />
+          <img
+            src="img/falls2.jpg"
+            srcset="img/falls2.jpg 1000w, img/falls2Small.jpg 700w"
+            alt="Catarata"
+          />
+        </picture>
+        <picture class="image">
+          <source
+            media="(max-width: 600px)"
+            srcset="img/mist.jpg 1500w, img/mistSmall.jpg 800w"
+            alt="Niebla"
+          />
+          <img
+            class="image"
+            srcset="img/mist.jpg 1500w, img/mistSmall.jpg 800w"
+            src="img/mist.jpg"
+            alt="Niebla"
+          />
+        </picture>
+
+        <picture class="image">
+          <source
+            media="(max-width: 600px)"
+            srcset="
+              img/mountainskies.jpg      1000w,
+              img/mountainskiesSmall.jpg  600w
+            "
+            alt="Las montañas"
+          />
+          <img
+            src="img/mountainskies.jpg"
+            srcset="
+              img/mountainskies.jpg      1000w,
+              img/mountainskiesSmall.jpg  600w
+            "
+            alt="Las montañas"
+          />
+        </picture>
+
+        <picture class="image">
+          <source
+            media="(max-width: 600px)"
+            srcset="img/nature.jpg 600w, img/natureSmall.jpg 400w"
+            alt="La frondosa naturaleza"
+          />
+          <img
+            src="img/nature.jpg"
+            srcset="img/nature.jpg 600w, img/natureSmall.jpg 400w"
+            alt="La frondosa naturaleza"
+          />
+        </picture>
+
+        <picture class="image">
+          <source
+            media="(max-width: 600px)"
+            srcset="img/ocean.jpg 1000w, img/oceanSmall.jpg 500w"
+            alt="Un Oceano"
+          />
+          <img
+            src="img/ocean.jpg"
+            srcset="img/ocean.jpg 1000w, img/oceanSmall.jpg 500w"
+            alt="Un Oceano"
+          />
+        </picture>
+      </section>
+    </main>
+
+  </body>
+</html>
